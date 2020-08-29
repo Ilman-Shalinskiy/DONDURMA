@@ -259,7 +259,8 @@ body {
 .franchise {
     margin: 85px 100px;
     margin-top: 85px;
-    padding-bottom: 200px;
+    padding-bottom: 50px;
+    
 }
 
 .franchise__wrapper {
@@ -301,10 +302,13 @@ body {
 .footer__wrapper {
     display: flex;
     flex-direction: column;
+    
 }
 
 .footer__wrapper-info {
+    margin-left: 100px;
     display: flex;
+    
 }
 
 .footer__about, .footer__social {
@@ -410,6 +414,7 @@ body {
 
     .franchise {
         margin: 85px 50px 0 50px ;
+        padding-bottom: 100px;
     }
 
     .franchise__wrapper {
@@ -727,7 +732,7 @@ body {
     }
 
     .footer__wrapper-info {
-        margin: 60px 0 0 30px;
+        margin: 20px 0 0 30px;
 
     }
 }
