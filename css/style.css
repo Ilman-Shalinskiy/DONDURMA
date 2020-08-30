@@ -6,9 +6,12 @@
     font-weight: normal;
     font-style: normal;
   }
-  img {
-    max-width: 100%;
-    }
+
+
+img {
+max-width: 100%;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -173,15 +176,21 @@ body {
 }
 
 
-.promo__header {
-    margin-left: 220px;
+.promo__wrapper {
+    max-width: 90%;
+    margin: 0 auto;
     margin-top: 70px;
 }
 
-.promo__wrapper {
+.promo__wrapper-content {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     margin-top: 51px;
+}
+
+.promo__man {
+    margin-right: 50px;
 }
 
 .promo__romb-left {
@@ -190,20 +199,13 @@ body {
 }
 
 
-.promo__man {
-    flex: 1 1 auto;
-    max-width: 100%;
-}
-
-
-
-
 .promo__item {
     display: flex;
     align-items: center;
     font-family: Montserrat;
     font-weight: 500;
     margin-bottom: 40px;
+    list-style: none;
     
     
 }
@@ -215,6 +217,7 @@ body {
 
 .promo__item-text {
     max-width: 250px;
+    margin: 0;
     
 }
 
@@ -225,14 +228,20 @@ body {
 }
 
 .location {
-    margin-left: 100px;
     margin-top: 185px;
 }
 
 
 .location__wrapper {
+    max-width: 90%;
+    margin: 0 auto;
+    margin-top: 100px;
+
+}
+
+.location__wrapper-content {
     display: flex;
-    justify-content: start;
+    justify-content: space-between;
     align-items: center;
     margin-top: 100px;
 
@@ -243,7 +252,6 @@ body {
 
 
 .location__info {
-    flex: 1 1 335px;
     font-family: Montserrat;
     font-weight: normal;
     font-size: 24px;
@@ -257,18 +265,23 @@ body {
 }
 
 .franchise {
-    margin: 85px 100px;
     margin-top: 85px;
-    padding-bottom: 50px;
-    
 }
 
 .franchise__wrapper {
+    max-width: 90%;
+    margin: 0 auto;
+    
+    
+
+}
+
+.franchise__wrapper-content {
     display: flex;
     align-items: center;
     background-color: #fff;
-    min-height: 124px;
     border-radius: 100px;
+    min-height: 124px;
     margin-top: 72px;
     
 
@@ -277,27 +290,35 @@ body {
 .franchise__text {
     font-family: Montserrat;
     font-weight: normal;
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 18px;
+    line-height: 20px;
     color: #212121;
     padding: 38px 50px;
-    max-width: 760px;
+    max-width: 700px;
     margin-bottom: 0;
 }
 
 .franchise__btn {
     background: #72003C;
-    box-shadow: 0px 16px 40px rgba(12, 12, 192, 0.08);
     border-radius: 100px;
     min-width: 152px;
     height: 48px;
-    margin: 38px 43px;
+    margin: 38px 43px 38px 0;
+    
 
     font-family: Montserrat;
     font-weight: bold;
     font-size: 23px;
     color: #fff;
 }
+    /* FOOTER */
+
+
+.footer {
+    margin-top: 88px;
+}
+
+
 
 .footer__wrapper {
     display: flex;
@@ -306,9 +327,8 @@ body {
 }
 
 .footer__wrapper-info {
-    margin-left: 100px;
     display: flex;
-    
+    margin-left: 57px;    
 }
 
 .footer__about, .footer__social {
@@ -346,6 +366,23 @@ body {
     border-top: 1px solid #fff
 }
 
+
+
+
+
+
+                                            /* MEDIA */                 
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width:992px) {
     
     .container {
@@ -361,9 +398,7 @@ body {
         margin: 0 13px;
     }
 
-    .main__man img  {
-        max-width: 100%;
-    }
+
 
     /* MAIN */
 
@@ -388,9 +423,7 @@ body {
         display: none;
     }
 
-    
 
-    
     
     /* LOCATION */
 
@@ -398,26 +431,20 @@ body {
         margin-top: 85px;
     }
 
-    .location__wrapper {
+
+    .location__wrapper-content {
         margin-top: 60px;
     }
     
-    .location__img img {
-        max-width: 100%;
-    }
 
-    .location,  .promo__header {
-        margin-left: 50px;
-    }
     
     /* FRANCHISE */
 
     .franchise {
-        margin: 85px 50px 0 50px ;
-        padding-bottom: 100px;
+
     }
 
-    .franchise__wrapper {
+    .franchise__wrapper-content {
         margin-top: 60px;
     }
 
@@ -430,6 +457,11 @@ body {
         margin: 0 30px;
         font-weight: normal;
         font-size: 24px;
+    }
+
+
+    .footer__wrapper-info {
+        margin-left: 49px;
     }
 }
 
@@ -444,9 +476,6 @@ body {
     .menu {
         display: none;
     }
-
-    
-
 
     /* MAIN */
 
@@ -464,7 +493,7 @@ body {
     }
 
     .main__wrapper {
-        max-width: 80%;
+        max-width: 90%;
         margin: 0 auto;
         
     }
@@ -491,36 +520,27 @@ body {
     /* PROMO */
 
     .promo {
-        
         margin-top: 100px;
     }
 
-    .promo__header {
-        max-width: 80%;
-        margin: 0 auto;
-    }
-    
-    .promo__wrapper {
-        max-width: 80%;
-        margin: 0 auto;
+
+
+    .promo__wrapper-content {
         flex-direction: row-reverse;
-        margin-top: 80px;
+
     }
 
     .promo__man {
-        flex-basis: 40%;
+        flex-basis: 50%;
     }
 
     .promo__info {
-        flex-basis: 60%;
+        flex-basis: 50%;
     }
 
 
     /* LOCATION */
 
-    .location {
-        margin: 0;
-    }
 
     .location__header {
         max-width: 80%;
@@ -528,19 +548,11 @@ body {
         margin-top: 50px;
     }
     
-    .location__wrapper {
-        max-width: 80%;
-        margin: 0 auto;
-        margin-top: 40px;
-    }
 
 
     /* franchise */
     
-    .franchise {
-        margin: 0;
-        padding-bottom: 0;
-    }
+
 
     .franchise__header {
         max-width: 80%;
@@ -548,10 +560,9 @@ body {
         margin-top: 50px;
     }
     
-    .franchise__wrapper {
-        max-width: 98%;
+    .franchise__wrapper-content {
         margin: 0 auto;
-        border-radius: 0;
+        border-radius: 15px;
         margin-top: 40px;
     }
 
@@ -563,14 +574,14 @@ body {
     }
 
     .franchise__btn {
+        font-size: 22px;
         margin: 0px 14px;
     }
 
     /* FOOTER */
 
     .footer__wrapper-info {
-        max-width: 80%;
-        margin: 60px 0 0 72px;
+        margin-left: 37px;
     }
 
     .footer__wrapper-team {
@@ -606,13 +617,6 @@ body {
     }
 
 
-
-    .main__wrapper {
-        max-width: 90%;
-        
-        
-    }
-
     .main__order {
         display: flex;
         flex-direction: column;
@@ -621,9 +625,9 @@ body {
     }
     .main__order-title {
         order: 2;
-        
         font-size: 150px;
         line-height: 150px;
+        margin-top: 30px;
     }
 
     .main__order-text {
@@ -656,31 +660,36 @@ body {
         display: none;
     }
 
-    .promo__wrapper {
-        display: block;
+    .promo__wrapper-content {
+        display: inline-block;
         margin-top: 50px;
+    }
+
+    .promo__item-text {
+        max-width: 100%;
+        font-size: 24px;
     }
 
 
     /* .franchise */
 
-    .franchise__wrapper {
+    .franchise__wrapper-content {
         flex-direction: column;
     }
 
     .franchise__btn {
         width: 90%;
-        margin: 24px 16px;
+        margin: 20px 16px;
     }
 
     .franchise__text {
-        padding: 20px 5px 20px 20px;
+        padding: 20px 5px 10px 20px;
 
     }
     /* FOOTER */
 
     .footer__wrapper-info {
-        margin: 0 auto;
+        margin-left: 31px;
     }
 
 }
@@ -723,6 +732,14 @@ body {
         
     }
 
+
+
+             /* location */
+
+    .location__wrapper-content {
+        margin-top: 30px;
+    }
+
     .location__info {
         font-size: 16px;
     }
@@ -732,12 +749,24 @@ body {
     }
 
     .footer__wrapper-info {
-        margin: 20px 0 0 30px;
+        margin: 20px 0 0 19px;
 
+    }
+
+    .footer__about {
+        margin-right: 30px;
     }
 }
 
 @media (max-width:370px) {
+    
+    .promo__wrapper-content {
+        margin-top: 30px;
+    }
+
+    .main__wrapper, .promo__wrapper, .location__wrapper, .franchise__wrapper {
+        max-width: 94%;
+    }
 
     .phone {
         font-size: 16px;
@@ -761,6 +790,14 @@ body {
         font-size: 11px;
         padding: 20px 10px;
     } 
+
+    .footer__about {
+        margin-right: 10px;
+    }
+    .footer__wrapper-info {
+        margin-left: 10px;
+    }
+    
 
 }
     
