@@ -151,7 +151,7 @@ main, .footer__wrapper-info {
 }
 
 .main__order {
-    flex: 1 1 580px;
+    flex: 1 1 500px;
 }
 
 .main__order-title {
@@ -188,7 +188,8 @@ main, .footer__wrapper-info {
 }
 
 .main__man {
-    flex: 0 1 260px;
+    width: 100%;
+    flex: 0 1 340px;
 }
 
 .mobile__man {
@@ -594,9 +595,6 @@ main, .footer__wrapper-info {
         display: none;
     }
 
-    .mobile__man {
-        display: inline;
-    }
 
     
     .main__order-title {
