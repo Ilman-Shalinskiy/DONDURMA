@@ -22,7 +22,6 @@ button, button:focus, button:active {
 }
 
 a:hover {
-    
     text-decoration: none;
     color: #bebebe;
 }
@@ -36,20 +35,16 @@ a:hover {
     background-color: #bebebe;
     display: block;
     content: "";
-    height: 2px;
+    height: 3px;
     width: 0%;
-    -webkit-transition: width .3s ease-in-out;
-    -moz--transition: width .3s ease-in-out;
-    transition: width .3s ease-in-out;
+    -webkit-transition: width .5s ease-in-out;
+    -moz--transition: width .5s ease-in-out;
+    transition: width .5s ease-in-out;
 }
 .line-hover a:hover:after,
 .line-hover a:focus:after {
     width: 100%;
 }
-
-
-
-
 
 
 nav {
