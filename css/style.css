@@ -17,7 +17,9 @@ img {
     
 }
 
-
+button, button:focus, button:active {
+    outline: none;
+}
 
 nav {
     position: relative;
@@ -162,6 +164,7 @@ main, .footer__wrapper-info {
     font-weight: 600;
     font-size: 32px;
     color: #333333;
+    outline: none;
 
 }
 
@@ -290,12 +293,12 @@ main, .footer__wrapper-info {
     min-width: 152px;
     height: 48px;
     margin: 38px 43px 38px 0;
-    
 
     font-family: Montserrat;
     font-weight: bold;
     font-size: 23px;
     color: #fff;
+    outline: none;
 }
     /* FOOTER */
 
@@ -881,7 +884,7 @@ main, .footer__wrapper-info {
 
 
     .franchise__text {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .franchise__btn {
