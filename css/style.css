@@ -37,9 +37,9 @@ a:hover {
     content: "";
     height: 3px;
     width: 0%;
-    -webkit-transition: width .5s ease-in-out;
-    -moz--transition: width .5s ease-in-out;
-    transition: width .5s ease-in-out;
+    -webkit-transition: width .4s ease-in-out;
+    -moz--transition: width .4s ease-in-out;
+    transition: width .4s ease-in-out;
 }
 .line-hover a:hover:after,
 .line-hover a:focus:after {
