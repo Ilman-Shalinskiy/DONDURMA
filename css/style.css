@@ -21,6 +21,37 @@ button, button:focus, button:active {
     outline: none;
 }
 
+a:hover {
+    
+    text-decoration: none;
+    color: #bebebe;
+}
+
+.line-hover a {
+    display: inline-block;
+    text-decoration:none;
+    cursor: pointer;
+}
+.line-hover a:after {
+    background-color: #bebebe;
+    display: block;
+    content: "";
+    height: 2px;
+    width: 0%;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+}
+.line-hover a:hover:after,
+.line-hover a:focus:after {
+    width: 100%;
+}
+
+
+
+
+
+
 nav {
     position: relative;
 }
@@ -159,11 +190,11 @@ main, .footer__wrapper-info {
     height: 80px;
     border-radius: 100px;
     background: #FFFFFF;
-    box-shadow: inset 0px 0px 25px rgba(0, 0, 0, 0.15);
     font-family: Montserrat;
     font-weight: 600;
     font-size: 32px;
     color: #333333;
+    border: none;
     outline: none;
 
 }
@@ -298,6 +329,7 @@ main, .footer__wrapper-info {
     font-weight: bold;
     font-size: 23px;
     color: #fff;
+    border: none;
     outline: none;
 }
     /* FOOTER */
@@ -444,6 +476,14 @@ main, .footer__wrapper-info {
 /* -------------------------------- */
 
 @media (max-width:768px) {
+    .line-hover a {
+        display: block;
+    }
+
+    .line-hover a:hover:after,
+    .line-hover a:focus:after {
+        width: 0%;
+    }
 
     main, .footer__wrapper-info {
         padding: 0 10px 0 60px;
