@@ -17,16 +17,7 @@ img {
     
 }
 
-.bg-block {
-    z-index: -1;
-    position: absolute;
-    top: 0;
-    background: url(../img/bg.png) top center/cover repeat;
-    background-size: 300px;
-    opacity: 0.02;
-    width: 100%;
-    height: 100%;
-}
+
 
 nav {
     position: relative;
@@ -43,9 +34,18 @@ main, .footer__wrapper-info {
     padding: 0 10px 0 60px;
 }
 
-.hamburger {
-    display: none;
+.bg-block {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    background: url(../img/bg.png) top center/cover repeat;
+    background-size: 300px;
+    opacity: 0.02;
+    width: 100%;
+    height: 100%;
 }
+
+
 	
 .text {
     font-family: Montserrat;
@@ -96,32 +96,10 @@ main, .footer__wrapper-info {
     display: none;
 }
 
-.burger {
+.hamburger {
     display: none;
-    position: relative;
-}
-.burger-btn, .burger-btn::before, .burger-btn::after {
-    position: absolute;
-    top: 50%;
-    width: 20px;
-    height: 2px;
-    background-color: #000000;
 }
 
-.burger-btn::before, .burger-btn::after {
-    content: '';
-    display: block;
-    transition: 0,5s;
-}
-
-.burger-btn::before {
-    transform: translateY(-5px);
-} 
-
-.burger-btn::after {
-    transform: translateY(3px);
-    
-}
 
 /* MAIN */
 
@@ -495,6 +473,7 @@ main, .footer__wrapper-info {
 
     .menu .main__social {
         display: flex;
+        margin: 0 auto;
         flex-direction: row;
     }
 
@@ -508,11 +487,13 @@ main, .footer__wrapper-info {
         border-radius: 100%;
         margin: 0 8px;
         padding: 5px;
+        
     }
 
     
 
     .menu__item {
+        margin: 0;
         width: 100%;
     }
     .menu__item:first-child {
@@ -521,8 +502,9 @@ main, .footer__wrapper-info {
 
     .menu__link {
         display: block;
-        font-size: 20px;
-        padding: 10px 0;
+        font-size: 25px;
+        text-align: center;
+        padding: 20px 0;
         color: #000000;
     }
         
@@ -584,7 +566,6 @@ main, .footer__wrapper-info {
         padding: 0;
     }
 
-
     /* MAIN */
 
     .main__social {
@@ -594,8 +575,6 @@ main, .footer__wrapper-info {
     .main__man {
         display: none;
     }
-
-
     
     .main__order-title {
         font-size: 200px;
@@ -612,10 +591,7 @@ main, .footer__wrapper-info {
         width: 40vw;
     }
 
-
-
     /* PROMO */
-
 
     .promo__wrapper-content {
         flex-direction: row-reverse;
@@ -630,7 +606,6 @@ main, .footer__wrapper-info {
         flex-basis: 50%;
     }
 
-
     /* LOCATION */
 
 
@@ -640,12 +615,8 @@ main, .footer__wrapper-info {
         margin-top: 50px;
     }
     
-
-
     /* franchise */
     
-
-
     .franchise__header {
         max-width: 80%;
         margin: 0 auto;
@@ -657,8 +628,6 @@ main, .footer__wrapper-info {
         border-radius: 15px;
         margin-top: 40px;
     }
-
-    
 
     .franchise__text {
         font-size: 16px;
@@ -675,7 +644,6 @@ main, .footer__wrapper-info {
     .footer__wrapper-team {
         padding: 20px 20px;
     }
-
 
     .number {
         margin: auto;
@@ -820,9 +788,14 @@ main, .footer__wrapper-info {
 }
 
 @media (max-width:450px) {
+    
+
+    .bg-block {
+        background-size: 170px;
+    }
 
     .number {
-       margin-left: 5%;
+        text-align: center;
     }
 
     .menu {
@@ -842,17 +815,22 @@ main, .footer__wrapper-info {
         max-width: 80px;
     }
 
-    .menu__link, .phone {
-        font-size: 14px;
+    .phone {
+        font-size: 16px;
     }
 
     .mobile__man {
-        max-width: 140px;
+        max-width: 150px;
     }
 
     .main__order-title {
-        font-size: 80px;
+        font-size: 100px;
         line-height: 50px;
+    }
+
+    .main__order-text {
+        font-size: 20px;
+        margin-top: 15px;
     }
 
     .main__order-btn {
@@ -870,11 +848,11 @@ main, .footer__wrapper-info {
     }
 
     .promo__item-text {
-        font-size: 12px;
+        font-size: 16px;
     }
 
     .promo__item-icon {
-        width: 60px;
+        width: 70px;
     }
 
     .promo__wrapper-content, .location__wrapper-content {
@@ -904,7 +882,7 @@ main, .footer__wrapper-info {
     }
 
     .footer__about-text, .footer__about-number, .footer__social-link {
-        font-size: 10px;
+        font-size: 13px;
     }
 
     .footer__social-link {
