@@ -204,6 +204,7 @@ main, .footer__wrapper-info {
     font-weight: 500;
     margin-bottom: 40px;
     list-style: none;
+    padding-right: 15px;
     
     
 }
@@ -606,6 +607,10 @@ main, .footer__wrapper-info {
         flex-basis: 50%;
     }
 
+    .promo__item {
+        padding-right: 0;
+    }
+
     /* LOCATION */
 
 
@@ -713,13 +718,13 @@ main, .footer__wrapper-info {
     }
 
     .promo__item-icon {
-        width: 70px;
+        width: 90px;
         margin-right: 16px;
     }
 
     .promo__item-text {
         max-width: 98%;
-        font-size: 18px;
+        font-size: 22px;
     }
 
     .promo__man, .location__img {
@@ -731,6 +736,11 @@ main, .footer__wrapper-info {
 
 
     /* .franchise */
+
+    .franchise__text {
+        font-size: 20px;
+        line-height: 28px;
+    }
 
     .franchise__wrapper-content {
         flex-direction: column;
@@ -788,6 +798,11 @@ main, .footer__wrapper-info {
 }
 
 @media (max-width:450px) {
+
+    .franchise__text {
+        padding: 20px 10px 10px 10px;
+        text-align: center;
+    }
     
 
     .bg-block {
@@ -820,7 +835,7 @@ main, .footer__wrapper-info {
     }
 
     .mobile__man {
-        max-width: 150px;
+        max-width: 170px;
     }
 
     .main__order-title {
@@ -840,7 +855,7 @@ main, .footer__wrapper-info {
     }
 
     .text {
-        font-size: 25px;
+        font-size: 30px;
     }
 
     .promo__item {
@@ -848,11 +863,12 @@ main, .footer__wrapper-info {
     }
 
     .promo__item-text {
-        font-size: 16px;
+        font-size: 20px;
     }
 
     .promo__item-icon {
-        width: 70px;
+        width: 80px;
+        margin-right: 20px;
     }
 
     .promo__wrapper-content, .location__wrapper-content {
@@ -863,12 +879,9 @@ main, .footer__wrapper-info {
         font-size: 16px;
     }
 
-    .franchise__text {
-        padding: 12px;
-    }
 
     .franchise__text {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .franchise__btn {
